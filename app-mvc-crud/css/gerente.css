@@ -1,0 +1,15 @@
+.container{
+    height: 46em;
+}
+footer{
+    height: 9em;
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+footer ul{
+    list-style: none!important;
+}
