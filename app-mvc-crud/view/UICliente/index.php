@@ -70,11 +70,12 @@ if(isset($_GET['cod'])){
 
 ?>
 
-<a href="Deslogar">LogOut</a>
-
 <h2 class="text-center"> Lista de Items <i class="bi bi-people-fill"></i> </h2>
 
 <h5 class="text-end">
+    <div id="Deslog">
+    <a href="Deslogar">Deslogar</a>
+    </div>
 <a href="RegistrarItem.php" class="btn btn-primary btn-xs">
 <i class="bi bi-person-plus-fill"></i>
 </a>

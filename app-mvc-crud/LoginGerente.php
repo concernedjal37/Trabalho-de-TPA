@@ -41,15 +41,27 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/especial">
+    <!--ìcone navegador-->
+    <link rel="shortcut icon" href="../resources/favicon.png" type="image/x-icon">
+
+<!--Bootstrap 5-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+<!--Icones Bootstrap 5-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+<!--Google Fonts-->
+<link href="fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
 </head>
 <body>
     <?php if (isset($message)) : ?>
-        <p style="color: red;"><?php echo $message; ?></p>
     <?php endif; ?>
    <form method="post">
    <div class="row justify-content-center">
         <div class="col-md-6">
-        <h2 class="mt-5">Login</h2>
+        <p style="color: red;"><?php echo $message; ?></p>
+        <h2 class="mt-5">Login para Gerente</h2>
         <form method="post">
         <div class="mb-3">
         <label for="email" class="form-label">Email:</label>
@@ -59,10 +71,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         <label for="senha" class="form-label">Senha:</label>
         <input type="password" class="form-control" id="senha" name="senha">
         </div>
-       <button type="submit">Logar</button>
+       <button class="btn btn-primary btn-lg" type="submit">Logar</button>
     </form>
-    <p class="mt-3 text-danger"><?php echo $message; ?></p>
+    <div id="Links">
     <p>Não tem conta? <a href="view/UIGerente/Cadastrar.php">Cadastre-se</a></p>
     <p>Logar Como Usuario? <a href="index.php">Logar</a></p>
+    </div>
 </body>
 </html>

@@ -21,7 +21,7 @@ $manager = new Manager();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD - Udemy</title>
 
-    <link rel="stylesheet" href="../../css/gerente">
+    <link rel="stylesheet" href="../../css/gerente.css">
 
     <!--ìcone navegador-->
     <link rel="shortcut icon" href="resources/favicon.png" type="image/x-icon">
@@ -52,7 +52,9 @@ $manager = new Manager();
         .thead{
             background-color: #f7f7f7;
         }
-
+        
+        #Deslog{
+        }
     </style>
 </head>
 
@@ -81,11 +83,12 @@ $manager = new Manager();
 
     ?>
 
-<a href="Deslogar">LogOut</a>
-
     <h2 class="text-center"> Lista de Usuarios <i class="bi bi-people-fill"></i> </h2>
 
     <h5 class="text-end">
+    <div id="Deslog">
+    <a href="Deslogar">Deslogar</a>
+    </div>
     <a href="page_register.php" class="btn btn-primary btn-xs">
     <i class="bi bi-person-plus-fill"></i>
     </a>
